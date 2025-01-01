@@ -33,6 +33,7 @@ def get_favorites(request):
             for favorite in favorites:
                 product = favorite.product  # 获取收藏的商品
                 product_data = {
+                    'category1':product.category1,
                     'product_id': product.product_id,
                     'name': product.name,
                     'price': str(product.price),  # 将价格转换为字符串
