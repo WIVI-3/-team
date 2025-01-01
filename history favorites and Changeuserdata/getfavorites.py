@@ -2,7 +2,7 @@ from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 import json
 import logging
-from myapp.models import User, Favorite, Product
+from myapp.models import User, Favorite, Product, ProductStatus
 
 logger = logging.getLogger(__name__)
 
@@ -16,16 +16,14 @@ def get_favorites(request):
             if not openid:
                 return JsonResponse({'error': 'openid is required'}, status=400)
 
-
-
             # 查找用户是否存在
             user = User.objects.get(openid=openid)
 
-            # 获取用户收藏的商品
-            favorites = Favorite.objects.filter(user=user)
+            # 获取用户收藏的商品，过滤商品状态为 "上架中"
+            favorites = Favorite.objects.filter(user=user, product__product_status=ProductStatus.LIST)
 
             # 如果没有收藏商品，返回空列表
-            if not favorites:
+            if not favorites.exists():
                 return JsonResponse({'message': 'No favorites found'}, status=200)
 
             # 构造商品数据
@@ -33,7 +31,7 @@ def get_favorites(request):
             for favorite in favorites:
                 product = favorite.product  # 获取收藏的商品
                 product_data = {
-                    'category1':product.category1,
+                    'category1': product.category1,
                     'product_id': product.product_id,
                     'name': product.name,
                     'price': str(product.price),  # 将价格转换为字符串
