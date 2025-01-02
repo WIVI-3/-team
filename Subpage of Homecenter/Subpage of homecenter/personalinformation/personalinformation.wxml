@@ -1,0 +1,70 @@
+<!--pages/homecenter/personalinformation/personalinformation.wxml-->
+<view class="container">
+
+  <view class="card">
+    <text class="card-title">修改个人信息</text>
+
+    <view class="form">
+      <view class="form-item">
+        <label>微信号</label>
+        <input
+          placeholder="请输入微信号"
+          value="{{wechatid}}"
+          data-field="wechatid"
+          bindinput="handleInputChange"
+        />
+      </view>
+
+      <view class="form-item">
+        <label>用户名</label>
+        <input
+          placeholder="请输入用户名"
+          value="{{username}}"
+          data-field="username"
+          bindinput="handleInputChange"
+        />
+      </view>
+
+      <view class="form-item">
+        <label>电话</label>
+        <input
+          placeholder="请输入电话"
+          value="{{phone}}"
+          data-field="phone"
+          bindinput="handleInputChange"
+        />
+      </view>
+
+      <view class="form-item">
+        <label>邮箱</label>
+        <input
+          placeholder="请输入邮箱"
+          value="{{email}}"
+          data-field="email"
+          bindinput="handleInputChange"
+        />
+      </view>
+
+      <view class="form-item">
+        <label>地址</label>
+        <input
+          placeholder="请输入地址"
+          value="{{address}}"
+          data-field="address"
+          bindinput="handleInputChange"
+        />
+      </view>
+    </view>
+
+    <button
+      class="save-button"
+      bindtap="saveChanges"
+    >
+      保存修改
+    </button>
+
+    <!-- 提示没有地址 -->
+    <text wx:if="{{!hasAddress}}" class="no-address">  您尚未创建地址，请填写并保存！</text>
+  </view>
+</view>
+
