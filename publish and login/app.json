@@ -1,0 +1,87 @@
+{
+  "pages": [
+    "pages/secondhand/secondhand",
+    "pages/logs/logs",
+    "pages/auction/auction",
+    "pages/homecenter/homecenter",
+    "pages/secondhand/search/search",
+    "pages/secondhand/goods/testpage",
+    "pages/secondhand/classification/books/books",
+    "pages/secondhand/classification/clothing/clothing",
+    "pages/secondhand/classification/electronics/electronics",
+    "pages/secondhand/classification/others/others",
+    "pages/secondhand/classification/sports/sports",
+    "pages/secondhand/search/searchresults/searchresults",
+    "pages/publish/publish",
+    "pages/rental/rental",
+    "pages/rental/classification/clothing/clothing",
+    "pages/rental/classification/books/books",
+    "pages/rental/classification/sports/sports",
+    "pages/rental/classification/others/others",
+    "pages/rental/classification/electronics/electronics",
+    "pages/rental/search/search",
+    "pages/rental/search/searchresults/searchresults",
+    "pages/auction/search/search",
+    "pages/auction/classification/electronics/auctionelectronics",
+    "pages/auction/classification/clothing/auctionclothing",
+    "pages/auction/classification/books/auctionbooks",
+    "pages/auction/classification/sports/auctionsports",
+    "pages/auction/classification/others/auctionothers",
+    "pages/auction/search/searchresults/searchresults",
+    "pages/auction/goods/goods",
+    "pages/homecenter/personalinformation/personalinformation",
+    "pages/homecenter/ordersbrowsing/ordersbrowsing",
+    "pages/homecenter/favorites/favorites",
+    "pages/homecenter/browsinghistory/browsinghistory",
+    "pages/secondhand/confirmorder/confirmorder",
+    "pages/rental/goods/rentalgoods",
+    "pages/rental/goods/confirmrentalorder/confirmrentalorder"
+  ],
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#1296db",
+    "borderStyle": "black",
+    "backgroundColor": "#fffff",
+    "list": [
+      {
+        "pagePath": "pages/secondhand/secondhand",
+        "text": "二手交易",
+        "iconPath": "/images/secondhand.png",
+        "selectedIconPath": "/images/secondhand-active.png"
+      },
+      {
+        "pagePath": "pages/auction/auction",
+        "text": "拍卖",
+        "iconPath": "/images/auction.png",
+        "selectedIconPath": "/images/auction-active.png"
+      },
+      {
+        "pagePath": "pages/publish/publish",
+        "iconPath": "/images/add.png",
+        "selectedIconPath": "/images/add-active.png"
+      },
+      {
+        "pagePath": "pages/rental/rental",
+        "text": "租赁",
+        "iconPath": "/images/rental.png",
+        "selectedIconPath": "/images/rental-active.png"
+      },
+      {
+        "pagePath": "pages/homecenter/homecenter",
+        "text": "个人中心",
+        "iconPath": "/images/homecenter.png",
+        "selectedIconPath": "/images/homecenter-active.png"
+      }
+    ]
+  },
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "汕购",
+    "navigationBarBackgroundColor": "#ffffff"
+  },
+  "enablePullDownRefresh": true,
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

@@ -1,0 +1,106 @@
+/* publish.wxss */
+.container {
+  padding: 20px;
+
+}
+
+.item {
+  display: flex;              
+  align-items: center;       
+  margin-bottom: 15px;
+}
+.item1{
+  display: flex;              
+  align-items: left;       
+  margin-bottom: 15px;
+}
+
+.text {
+  font-size: 14px;
+  color: #333;
+  width: 120px;
+  text-align: left;
+}
+
+.input, .textarea {
+  width: 200px;
+  flex: 1;                    /* 输入框占据剩余的宽度 */
+  padding: 10px;
+  margin-left: 5px;          /* 输入框和文本之间的间距 */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: left;
+}
+
+
+.textarea {
+  width: 200px;
+  height: 100px;
+}
+
+.picker {
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  margin-top: 5px;
+  text-align: left;
+  margin-left: 5px;
+}
+
+.upload-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.upload-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  object-fit: cover;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.uploaded-image {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+
+.image-list {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 25px;      /* 修改为较小的图标大小 */
+  height: 25px;     /* 修改为较小的图标大小 */
+  cursor: pointer;  /* 让图标变成手型，表示可点击 */
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: #00aa09;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+}
