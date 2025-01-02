@@ -1,0 +1,54 @@
+<view class="search-container">
+  <!-- 使用图标+输入框的方式 -->
+  <view class="search-box">
+    <input 
+      class="search-input" 
+      placeholder="搜索租赁商品" 
+      bindtap="onGoToSearchPage" 
+      bindinput="onInputChange" />
+      <icon class="search-icon" bindtap="onGoToSearchPage" type="search" size="20" />
+  </view>
+</view>
+<!-- 分类模块 -->
+<view class="category-container">
+  <view class="category-item" bindtap="onGoToelectronics" data-category="electronics">
+    <image class="category-icon" src="/images/electronics.png" />
+    <text class="category-text">电子</text>
+  </view>
+  <view class="category-item" bindtap="onGoToclothing" data-category="clothing">
+    <image class="category-icon" src="/images/clothing.png" />
+    <text class="category-text">服装</text>
+  </view>
+  <view class="category-item" bindtap="onGoTobooks" data-category="books">
+    <image class="category-icon" src="/images/books.png" />
+    <text class="category-text">书籍</text>
+  </view>
+  <view class="category-item" bindtap="onGoTosports" data-category="sports">
+    <image class="category-icon" src="/images/sports.png" />
+    <text class="category-text">运动</text>
+  </view>
+  <view class="category-item" bindtap="onGoToothers" data-category="others">
+    <image class="category-icon" src="/images/others.png" />
+    <text class="category-text">其他</text>
+  </view>
+</view>
+
+<!-- 推荐租赁商品展示模块 -->
+<view class="recommended-container">
+  <text class="recommended-title">推荐租赁商品</text>
+  <view class="recommended-items">
+    <view class="recommended-item" wx:for="{{rentalGoods}}" wx:key="product_id" bindtap="goodListClickHandle" 
+          data-product-id="{{item.product_id}}" 
+          data-product-name="{{item.name}}" 
+          data-product-price="{{item.price}}" 
+          data-product-image="{{item.imageName}}"
+          data-product-rental_period="{{item.rental_period}}">
+      <image class="item-image" src="{{item.images[0]}}" />
+      <view class="item-info">
+        <text class="item-title">{{item.name}}</text>
+        <text class="item-price">￥{{item.price}}{{item.rental_period}}</text>
+      </view>
+    </view>
+  </view>
+    <!-- 可以继续添加更多推荐租赁商品 -->
+</view>

@@ -1,0 +1,74 @@
+<!--pages/homecenter/homecenter.wxml-->
+<view class="main">
+  <view class="user-info">
+    <!-- 显示授权登录按钮 -->
+    <button class="bt" wx:if="{{!avatarUrl}}" open-type="chooseAvatar" bindchooseavatar="getAvatar">请授权登录</button>
+
+    <!-- 显示头像 -->
+    <image class="avatar" wx:else src="{{avatarUrl}}"></image>
+
+    <!-- 显示昵称或昵称输入框 -->
+    <view class="name">
+      <!-- 显示昵称 -->
+      <text wx:if="{{nickName}}">{{nickName}}</text>
+      <!-- 显示昵称输入框 -->
+      <input wx:elif="{{avatarUrl && !nickName}}" type="nickname" class="inp" bindblur="getName" placeholder="请输入你的名称"/>
+    </view>
+
+    <!-- 确认登录按钮 -->
+    <button wx:if="{{showLoginButton}}" bindtap="confirmLogin">确认登录</button>
+
+    <!-- 退出登录按钮 -->
+    <button wx:if="{{showLogoutButton}}" bindtap="logout">退出登录</button>
+  </view>
+
+  
+  <view class="order">
+    <view class="order-header">
+      <text class="txt">我的订单</text>
+    </view>
+
+    <view class="order-tab" >
+
+      <view class="tab">
+        <view class="icon-image" bindtap="onGoTobrowse">
+          <image src="/images/历史记录.png" class="icon"></image>
+        </view>
+        <text class="txt">浏览记录</text>
+      </view>
+
+      <view class="tab">
+        <view class="icon-image" bindtap="onGoToorders">
+          <image src="/images/查看订单.png" class="icon"></image>
+        </view>
+        <text class="txt">查看订单</text>
+      </view>
+    </view>
+  </view>
+
+
+  <view class="order">
+    <view class="order-header">
+      <text class="txt">我的服务</text>
+    </view>
+
+    <view class="order-tab">
+      <view class="tab">
+        <view class="icon-image" bindtap="onGoToinformation">
+          <image src="/images/个人信息.png" class="icon" ></image>
+        </view>
+        <text class="txt" style="width: 156rpx; display: block; box-sizing: border-box">个人信息管理</text>
+      </view>
+      <view class="tab">
+        <view class="icon-image" bindtap="onGoTofavorites">
+          <image src="/images/收藏夹.png" class="icon"></image>
+        </view>
+        <text class="txt">收藏夹</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+
+
