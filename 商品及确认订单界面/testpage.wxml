@@ -1,0 +1,56 @@
+<swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="{{5000}}" class="banner" duration="{{1000}}" circular="{{true}}">
+  <block wx:for="{{goods_img}}" wx:key="goods_info">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" mode="aspectFill" data-src="{{item}}" bindtap="previewImage"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<!-- 商品价格 -->
+<view class="info-price clear">
+  <view class='price'>￥{{productPrice}}</view>
+</view>
+
+<!-- 商品标题 -->
+<view class="info-title">
+    <text>{{productName}}</text>
+</view>
+
+<!-- 运费信息 -->
+<view style="border-top:1px solid #F6F6F6;background: #fff; padding:5px 15px;">
+    <view class="clearfix flex grey gridXt">
+      <text class="sub">是否送货上门：<block wx:if='{{provide_service}}'>是</block><block wx:else>否</block></text>
+    </view>
+</view>
+
+<!-- 卖家信息 -->
+<view class="store-info">
+  <view class="store">
+    <!-- 卖家昵称 -->
+    <view class="name">卖家昵称：{{goods_info.seller_name}}</view>
+  </view>
+</view>
+
+<!-- 商品详情 -->
+<view class='details_box'>
+  <view style="height:40px;line-height: 40px;border-bottom:1px solid #f5f5f5;">
+     <view>商品详情</view>
+  </view>
+  <view style='padding:10px 0px;'>
+      <view class="wxParse">
+         {{goods_description}}
+      </view>
+  </view>
+</view>
+
+<!-- 底部浮动按钮 -->
+<view class="foot-nav mt15">
+  <view class="flex con gridXt tc">
+      <view class="collect-cart sub f16">
+      <button class="collect-cart-btn" bindtap='collect'>收藏</button>
+    </view>
+    <view class="add-cart sub f16">
+      <button class="add-cart-btn" bindtap='buy'>立即购买</button>
+    </view>
+  </view>
+</view>

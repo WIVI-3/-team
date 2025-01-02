@@ -1,0 +1,37 @@
+<!--pages/secondhand/confirmorder/confirmorder.wxml-->
+<view class="order-confirm">
+  <!-- 商品信息 -->
+  <view class="goods-info">
+    <image class="goods-image" src="{{goods_img[0]}}" mode="aspectFill" />
+    <view class="goods-details">
+      <text class="goods-title">{{productName}}</text>
+      <text class="goods-price">￥{{productPrice}}{{rental_period}}</text>
+    </view>
+  </view>
+
+<!-- 买家信息标题 -->
+<view class="section-title">
+    <text>确认买家信息：</text>
+  </view>
+  
+  <!-- 买家信息 -->
+  <view class="buyer-info">
+    <view class="info-item">
+      <text class="label">收货地址：</text>
+      <text class="value">{{buyer.address}}</text>
+    </view>
+    <view class="info-item">
+      <text class="label">联系电话：</text>
+      <text class="value">{{buyer.phone}}</text>
+    </view>
+    <view class="info-item">
+      <text class="label">微信号：</text>
+      <text class="value">{{buyer.wechat_id}}</text>
+    </view>
+  </view>
+
+  <!-- 提交订单按钮 -->
+  <view class="submit-btn">
+    <button class="btn" bindtap="submitOrder">提交订单</button>
+  </view>
+</view>

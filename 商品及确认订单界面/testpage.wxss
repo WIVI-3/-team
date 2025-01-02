@@ -1,0 +1,191 @@
+.clear {
+  clear: both;
+  overflow: hidden;
+}
+
+.banner {
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.fxbtn {
+  background: none;
+  border: 0px;
+  padding: 0px;
+  border-radius: 0px;
+  font-size: 12px;
+  color: #999;
+}
+
+.info-title {
+  background: #fff;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.info-price {
+  border-bottom: 1px solid #F6F6F6;
+  background: #fff;
+  padding: 0 15px;
+}
+
+.price {
+  float: left;
+  height: 50px;
+  line-height: 50px;
+  color: #FF6666;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.fenxiang {
+  text-align: center;
+  font-size: 12px;
+  color: #999;
+  width: 50px;
+  line-height: 20px;
+  overflow: hidden;
+  float: right;
+}
+
+.fenxiang image {
+  width: 20px;
+  height: 20px;
+}
+
+.store-info {
+  background: #fff;
+  padding: 10px 15px;
+}
+
+.store-info .name {
+  font-size: 14px;
+  color: #333;
+}
+
+.details_box {
+  margin-top: 10px;
+  padding: 0 15px;
+  font-size: 13px;
+  background: #fff;
+}
+
+.foot-nav {
+  height: 46px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  z-index: 999;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+/* 修改收藏按钮渐变色 */
+.collect-cart .collect-cart-btn {
+  background: linear-gradient(to right, #4e6ef2, #1fc982); /* 新的渐变色（蓝紫色） */
+  color: #fff;
+  border-radius: 50px;
+  padding: 0;
+  width: 180px;
+  height: 35px;
+  line-height: 35px;
+  margin-top: 5px;
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+.add-cart .add-cart-btn {
+  background: linear-gradient(to right, #FF7A34, #EE32FF);
+  color: #fff;
+  border-radius: 50px;
+  padding: 0;
+  width: 180px;
+  height: 35px;
+  line-height: 35px;
+  margin-top: 5px;
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+.fast-links .iconfont {
+  padding: 5px 0;
+}
+
+.fast-links .iconfont::before {
+  display: block;
+  margin-top: 5px;
+  font-size: 18px;
+}
+
+.store-info .store {
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+}
+
+.store-info .header_img {
+  margin-right: 10px;
+}
+
+.store-info .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.store-info .name {
+  font-size: 14px;
+  color: #333;
+}
+
+.icon-shoucang2 {
+  color: red;
+}
+
+/* 收藏按钮样式 */
+.fast-links .sub {
+  background-color: #FF7A34;
+  border-radius: 50px;
+  padding: 5px 15px;
+  text-align: center;
+}
+
+.fast-links .iconfont {
+  font-size: 20px;
+  color: white;
+  line-height: 24px;
+}
+
+/* 优化商品详情部分 */
+/* 修改商品描述部分，确保文本能够换行 */
+.wxParse {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+  word-wrap: break-word;  /* 让长文本自动换行 */
+  word-break: break-word; /* 强制长单词换行 */
+  white-space: normal;    /* 允许文本换行 */
+}
+
+/* 为图片添加圆角 */
+.details_box .wxParse img {
+  border-radius: 8px;
+}
