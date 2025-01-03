@@ -14,3 +14,35 @@
 收藏：用户可以在进入商品详情页后，点击左下角“收藏”按钮以收藏商品，收藏的商品可在“个人中心”的“收藏夹”里进行查看，用户可清空收藏夹，也可在里面点击商品进入对应的商品详情页。
 
 浏览记录：用户在进入商品详情页后，程序会将该商品记录在浏览记录中，用户可在“个人中心”的“浏览记录”里进行查看，用户可清空浏览记录。
+
+以下是相关界面的图片：
+
+ ![image](https://github.com/user-attachments/assets/dc6bc8a9-172a-4023-a63e-c4921dce241b) 
+个人信息修改界面
+
+![image](https://github.com/user-attachments/assets/8ea4a933-60c3-4bbc-a945-cee2a78e8ca0)
+二手交易界面
+
+![image](https://github.com/user-attachments/assets/f386ce88-13ce-4b96-b4a7-476b771a8993)
+拍卖商品界面
+
+ ![image](https://github.com/user-attachments/assets/803914d0-5e10-4be7-82a8-4dff71805bf9)
+发布商品界面
+
+ ![image](https://github.com/user-attachments/assets/f8167719-bb13-4f83-9c11-23c6bfb38766)
+租赁商品界面
+
+![image](https://github.com/user-attachments/assets/65abbf24-f374-4f53-806f-be612ca8108d)
+个人中心界面
+
+![image](https://github.com/user-attachments/assets/9b05873d-2ae4-4b53-9aaa-070e19ab2807)
+浏览记录界面
+
+![image](https://github.com/user-attachments/assets/c5a9602a-bce4-4924-9bce-18b5aa0290ad)
+查看订单界面
+
+ ![image](https://github.com/user-attachments/assets/155118ea-2f7e-46c5-968a-de18dea1682d)
+点击购买后确认订单界面
+
+![image](https://github.com/user-attachments/assets/59bbff40-8aa6-474f-bdce-ce5155829f13)
+商品详情页
