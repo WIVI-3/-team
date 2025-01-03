@@ -1,0 +1,30 @@
+<view class="results-container">
+  <view class="search-header">
+    <text>搜索内容："{{query}}"</text>
+  </view>
+  
+  <!-- 显示搜索结果 -->
+  <view class="results-list" wx:if="{{results.length > 0}}">
+    <view class="recommended-container">
+      <text class="recommended-title">搜索结果</text>
+      <view class="recommended-items">
+        <view class="recommended-item" wx:for="{{results}}" wx:key="product_id" bindtap="goodListClickHandle" 
+              data-product-id="{{item.product_id}}" 
+              data-product-name="{{item.name}}" 
+              data-product-price="{{item.price}}" 
+              data-product-image="{{item.images[0]}}">
+          <image class="item-image" src="{{item.images[0]}}" />
+          <view class="item-info">
+            <text class="item-title">{{item.name}}</text>
+            <text class="item-price">￥{{item.price}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 如果没有找到搜索结果 -->
+  <view wx:else>
+    <text>没有找到相关商品</text>
+  </view>
+</view>

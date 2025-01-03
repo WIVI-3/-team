@@ -1,0 +1,30 @@
+<!--pages/secondhand/search/search.wxml-->
+<!-- 搜索页面的 WXML -->
+
+<view class="search-container">
+  <!-- 使用图标+输入框的方式 -->
+  <view class="search-box">
+    <input 
+      class="search-input" 
+      placeholder="请输入商品名称" 
+      bindinput="onInputChange" />
+      <icon class="search-icon" bindtap="Search"  type="search" size="20" />
+  </view>
+</view>
+ <!-- 历史搜索记录 -->
+ <view class="history-container1">
+  <view class="history-header">
+      <text>历史搜索</text>
+      <button class="clear-btn" bindtap="clearHistory">清除历史记录</button>
+    </view>
+ </view>
+ <view class="history-container2" wx:if="{{history.length > 0}}">
+    <view class="history-list">
+      <block wx:for="{{history}}" wx:key="index">
+        <view class="history-item" bindtap="onSelectHistory" data-query="{{item}}">
+          <text>{{item}}</text>
+        </view>
+      </block>
+    </view>
+  </view>
+

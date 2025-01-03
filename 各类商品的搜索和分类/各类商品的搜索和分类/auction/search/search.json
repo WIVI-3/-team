@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "拍卖搜索",
+  "onReachBottomDistance": 10,
+  "backgroundTextStyle": "light",
+  "enablePullDownRefresh": true,
+  "usingComponents": {}
+}

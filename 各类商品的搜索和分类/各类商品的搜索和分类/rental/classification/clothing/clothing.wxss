@@ -1,0 +1,55 @@
+/* pages/secondhand/classification/clothing/clothing.wxss */
+/* pages/secondhand/classification/electronics/electronics.wxss */
+/* pages/secondhand/classification/electronics/electronics.wxss */
+/* 推荐商品展示模块 */
+.recommended-container {
+  margin-top: 10px;
+  padding: 0 10px;
+}
+
+.recommended-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.recommended-items {
+  display: flex;
+  flex-wrap: wrap;  /* 保持换行 */
+  justify-content: space-between;  /* 两个商品分布在行的两端 */
+}
+
+.recommended-item {
+  width: 40%; 
+  margin-bottom: 15px;  
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+}
+
+.item-info {
+  display: flex;  
+  flex-direction: column; 
+  align-items: center;
+}
+
+.item-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.item-title {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.item-price {
+  margin-top: 5px;
+  font-size: 16px;
+  color: #ff5c5c;
+}

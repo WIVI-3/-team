@@ -1,0 +1,17 @@
+<!--pages/auction/classification/others/auctionothers.wxml-->
+<view class="recommended-container">
+  <text class="recommended-title">其他拍品</text>
+  <view class="recommended-items">
+    <view class="recommended-item" wx:for="{{secondhandGoods}}" wx:key="product_id" bindtap="goodListClickHandle" 
+          data-product-id="{{item.product_id}}" 
+          data-product-name="{{item.name}}" 
+          data-product-price="{{item.price}}" 
+          data-product-image="{{item.imageName}}">
+      <image class="item-image" src="{{item.imageUrl}}" />
+      <view class="item-info">
+        <text class="item-title">{{item.name}}</text>
+        <text class="item-price">￥{{item.price}}起拍</text>
+      </view>
+    </view>
+  </view>
+</view>

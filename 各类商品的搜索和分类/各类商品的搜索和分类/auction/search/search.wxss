@@ -1,0 +1,75 @@
+/* pages/auction/search/search.wxss */
+.search-container {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 300px;
+  padding: 5px 10px;
+}
+
+.search-input {
+  flex: 1;
+  height: 30px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding: 0 8px;
+}
+
+.search-icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+.history-container1 {
+  margin-top: 1px;
+  width: 150%;
+}
+.history-container2 {
+  margin-top: 1px;
+  width: 100%;
+}
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clear-btn {
+  background: none;
+  border: none;
+  color: #000000;
+  font-size: 14px;
+}
+
+.history-list {
+  margin-top: 1px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;  /* 控制气泡之间的间距 */
+}
+
+.history-item {
+  background-color: #f1f1f1;
+  padding: 8px 15px;
+  border-radius: 25px;  /* 圆角气泡效果 */
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  /* 添加阴影效果 */
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.history-item:hover {
+  background-color: #007AFF;  /* 悬停时的背景颜色 */
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+} 
